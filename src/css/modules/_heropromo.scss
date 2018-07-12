@@ -1,0 +1,11 @@
+.hero-promo-item {
+  flex: 0 1 30%;
+  .hero-promo-heading {
+    @include H4(left, $white);
+    padding-top: $space-inbetween-elements;
+  }
+  .hero-promo-description {
+    @include P(left, $white);
+    padding-top: $space-inbetween-elements;
+  }
+}

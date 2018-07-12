@@ -1,0 +1,177 @@
+#modal {
+  width: 60rem;
+  height: 40rem;
+  background-color: $primary-color;
+  border-radius: 1rem;
+  .modal-body-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    .modal-signin {
+      flex: 0 1 45%;
+      height: 35rem;
+      background-color: $secondary-color;
+      border-radius: 1rem;
+      margin-top: 2.5rem;
+      box-shadow: 5px 5px 100px $black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      .modal-heading {
+        @include H3(center, $white);
+      }
+      .modal-subtitle {
+        @include H5(center, $white);
+      }
+      .modal-social-icons {
+        display: flex;
+        justify-content: space-evenly;
+        width: 15rem;
+        .social-circle {
+          width: 2rem;
+          height: 2rem;
+          background-color: $white;
+          display: flex;
+          justify-content: center;
+          padding: 0.5rem;
+          border-radius: 10rem;
+          .fab {
+            color: $secondary-color;
+            align-self: center;
+            &:hover {
+              color: $primary-color;
+            }
+          }
+        }
+      }
+      .modal-username {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .modal-username-label {
+          @include P(center, $white);
+          text-transform: uppercase;
+        }
+        .modal-username-input {
+          font-family: $font-family;
+          width: 100%;
+          border: 0.1rem solid $secondary-color;
+          border-radius: 0.5rem;
+          line-height: 2.5rem;
+          padding-left: 1rem;
+          width: 15rem;
+        }
+      }
+      .modal-password {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .modal-password-label {
+          @include P(center, $white);
+          text-transform: uppercase;
+        }
+        .modal-password-input {
+          font-family: $font-family;
+          width: 100%;
+          border: 0.1rem solid $secondary-color;
+          border-radius: 0.5rem;
+          line-height: 2.5rem;
+          padding-left: 1rem;
+          width: 15rem;
+        }
+      }
+      .modal-signin-button {
+      }
+      .modal-forgot-password {
+        @include P(center, $white);
+      }
+    }
+    .modal-signup {
+      flex: 0 1 35%;
+      height: 35rem;
+      background-color: $secondary-color;
+      border-radius: 1rem;
+      margin-top: 2.5rem;
+      box-shadow: 5px 5px 100px $black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      .modal-heading {
+        @include H3(center, $white);
+      }
+      .modal-username {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .modal-username-label {
+          @include P(center, $white);
+          text-transform: uppercase;
+        }
+        .modal-username-input {
+          font-family: $font-family;
+          width: 100%;
+          border: 0.1rem solid $secondary-color;
+          border-radius: 0.5rem;
+          line-height: 2.5rem;
+          padding-left: 1rem;
+          width: 15rem;
+        }
+      }
+      .modal-email {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .modal-email-label {
+          @include P(center, $white);
+          text-transform: uppercase;
+        }
+        .modal-email-input {
+          font-family: $font-family;
+          width: 100%;
+          border: 0.1rem solid $secondary-color;
+          border-radius: 0.5rem;
+          line-height: 2.5rem;
+          padding-left: 1rem;
+          width: 15rem;
+        }
+      }
+      .modal-password {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .modal-password-label {
+          @include P(center, $white);
+          text-transform: uppercase;
+        }
+        .modal-password-input {
+          font-family: $font-family;
+          width: 100%;
+          border: 0.1rem solid $secondary-color;
+          border-radius: 0.5rem;
+          line-height: 2.5rem;
+          padding-left: 1rem;
+          width: 15rem;
+        }
+      }
+      .modal-disclaimer {
+        @include P(center, $white);
+        width: 80%;
+        .highlight {
+          color: $primary-color;
+        }
+      }
+      .modal-signup-button {
+      }
+      .modal-have-account {
+        @include P(center, $white);
+      }
+    }
+  }
+}

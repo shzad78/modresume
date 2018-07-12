@@ -1,0 +1,67 @@
+#how-it-works {
+  .wrapper {
+    @include wrapper($wrapper-width);
+    .how-it-works-heading {
+      @include H3(center, $primary-color);
+      padding-top: $space-for-first-element;
+    }
+    .how-it-works-subtitle {
+      @include P(center, $secondary-color);
+      padding-top: $space-inbetween-elements;
+      width: 60%;
+      margin: auto;
+    }
+    .steps-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: $space-inbetween-elements;
+    }
+    .text-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: $space-inbetween-elements;
+      padding-bottom: $space-for-last-element;
+      .main-para {
+        flex: 0 1 40%;
+        .main-para {
+          @include H5(left, $secondary-color);
+          padding-top: $space-inbetween-elements;
+          line-height: 1.4rem;
+        }
+      }
+      .sub-para {
+        flex: 0 1 55%;
+        .sub-para {
+          @include P(left, $secondary-color);
+          padding-top: $space-inbetween-elements;
+        }
+      }
+    }
+  }
+}
+
+// Layout responsive for Tablet
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #how-it-works {
+    .wrapper {
+      .steps-container {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+// Layout responsive for Mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #how-it-works {
+    .wrapper {
+      .steps-container {
+        width: 100%;
+        flex-direction: column;
+      }
+    }
+  }
+}

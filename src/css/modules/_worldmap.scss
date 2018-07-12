@@ -1,0 +1,16 @@
+#world-map {
+  display: flex;
+  justify-content: center;
+  .wrapper-class-name {
+    flex: 0 1 100%;
+  }
+}
+
+// Layout responsive for HD Desktops
+@media screen and (min-width: 1200px) {
+  #world-map {
+    .wrapper-class-name {
+      flex: 0 1 75%;
+    }
+  }
+}

@@ -1,0 +1,145 @@
+#hero {
+  .hero {
+    background: $grey-color url("/images/hero-background.jpg") no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    .overlay {
+      width: 100%;
+      height: 100vh;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      right: 0px;
+      left: 0px;
+      background-color: rgba(227, 114, 98, 0.85);
+      .navigation-bar {
+        height: 3rem;
+        padding: 1.5rem 0rem;
+        position: relative;
+        width: 100%;
+        .wrapper {
+          @include wrapper(90%);
+          display: flex;
+          // justify-content: center;
+          // align-items: center;
+          .logo-container {
+            flex: 0 1 5%;
+          }
+          .nav-container {
+            flex: 0 1 90%;
+            display: flex;
+            justify-content: space-between;
+            .nav {
+              list-style-type: none;
+              .nav-links {
+                text-decoration: none;
+                .nav-items {
+                  @include nav($white);
+                }
+              }
+            }
+          }
+        }
+      }
+      .navigation-bar-on-scroll {
+        height: 3rem;
+        padding: 1.5rem 0rem;
+        position: fixed;
+        width: 100%;
+        box-shadow: 5px 5px 25px $secondary-color;
+        background-color: $white;
+        z-index: 1;
+        .wrapper {
+          @include wrapper(90%);
+          display: flex;
+          align-items: center;
+          .logo-container {
+            flex: 0 1 5%;
+          }
+          .nav-container {
+            flex: 0 1 90%;
+            display: flex;
+            justify-content: space-between;
+            .nav {
+              list-style-type: none;
+              .nav-links {
+                text-decoration: none;
+                .nav-items {
+                  @include nav($primary-color);
+                }
+              }
+            }
+          }
+        }
+      }
+      .wrapper {
+        @include wrapper($wrapper-width);
+        padding-bottom: $space-for-last-element;
+        .filler {
+          height: 3rem;
+          padding: 1.5rem 0rem;
+        }
+        .button-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-evenly;
+          padding-bottom: $space-inbetween-elements;
+        }
+        .spacer {
+          border-bottom: 1px solid $white;
+          padding-bottom: $space-inbetween-elements;
+        }
+        .hero-promo {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+}
+
+// Layout responsive for Tablet
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #hero {
+    .hero {
+      .overlay {
+        .navigation-bar {
+          display: none;
+        }
+        .navigation-bar-on-scroll {
+          display: none;
+        }
+        .wrapper {
+          .hero-promo {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Layout responsive for Mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #hero {
+    .hero {
+      .overlay {
+        .navigation-bar {
+          display: none;
+        }
+        .navigation-bar-on-scroll {
+          display: none;
+        }
+        .wrapper {
+          .hero-promo {
+            display: flex;
+            flex-direction: column;
+          }
+        }
+      }
+    }
+  }
+}

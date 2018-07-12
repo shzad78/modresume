@@ -1,0 +1,36 @@
+#reactified-impact {
+  .wrapper {
+    @include wrapper($wrapper-width);
+    .reactified-impact-heading {
+      @include H3(center, $primary-color);
+      padding-top: $space-for-first-element;
+    }
+    .reactified-impact-subtitle {
+      @include P(center, $secondary-color);
+      padding-top: $space-inbetween-elements;
+      width: 60%;
+      margin: auto;
+    }
+    .reactified-impact-description {
+      @include P(center, $secondary-color);
+      padding-top: $space-inbetween-elements;
+      width: 60%;
+      margin: auto;
+    }
+    .button-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      padding-top: $space-elements;
+      padding-bottom: $space-for-last-element;
+      .button-text {
+        @include button(
+          $secondary-color,
+          $primary-color,
+          $primary-color,
+          $white
+        );
+      }
+    }
+  }
+}
