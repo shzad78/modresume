@@ -1,0 +1,27 @@
+// ########## All Partials Styles Here ##########
+@import "./partials/globals.scss";
+@import "./partials/mixins.scss";
+@import "./partials/variables.scss";
+
+// ########## All React Slick Styles Here ##########
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+// ########## All Modules Styles Here ##########
+@import "./modules/app.scss";
+@import "./modules/hero.scss";
+@import "./modules/button.scss";
+@import "./modules/heropromo.scss";
+@import "./modules/features.scss";
+@import "./modules/featureitem.scss";
+@import "./modules/howitworks.scss";
+@import "./modules/step.scss";
+@import "./modules/responsiveresume.scss";
+@import "./modules/reactifiedimpact.scss";
+@import "./modules/about.scss";
+@import "./modules/testimonials.scss";
+@import "./modules/contact.scss";
+@import "./modules/footer.scss";
+@import "./modules/modal.scss";
+@import "./modules/worldmap.scss";
+@import "./modules/burgermenu.scss";
