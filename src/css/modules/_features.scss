@@ -1,0 +1,22 @@
+#features {
+  background-color: rgba(67, 74, 84, 0.15);
+  .wrapper {
+    @include wrapper($wrapper-width);
+    .features-heading {
+      @include H3(center, $primary-color);
+      padding-top: $space-for-first-element;
+    }
+    .features-description {
+      @include P(center, $secondary-color);
+      padding-top: $space-inbetween-elements;
+    }
+    .feature-item-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: $space-elements;
+      padding-bottom: $space-for-last-element;
+    }
+  }
+}

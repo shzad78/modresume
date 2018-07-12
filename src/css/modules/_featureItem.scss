@@ -1,0 +1,30 @@
+.feature-item {
+  flex: 0 1 30%;
+  margin-bottom: $space-elements;
+  .feature-item-icon {
+    display: block;
+    margin: auto;
+  }
+  .feature-item-heading {
+    @include H3(center, $primary-color);
+    padding-top: $space-inbetween-elements;
+  }
+  .feature-item-description {
+    @include P(center, $secondary-color);
+    padding-top: $space-inbetween-elements;
+  }
+}
+
+// Layout responsive for Tablet
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .feature-item {
+    flex: 0 1 100%;
+  }
+}
+
+// Layout responsive for Mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .feature-item {
+    flex: 0 1 100%;
+  }
+}

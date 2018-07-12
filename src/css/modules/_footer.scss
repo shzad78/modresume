@@ -1,0 +1,124 @@
+#footer {
+  background-color: $secondary-color;
+  width: 100%;
+  .wrapper {
+    @include wrapper($wrapper-width);
+    .footer-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding-top: $space-for-first-element;
+      padding-bottom: $space-for-last-element;
+      .footer-column {
+        flex: 0 1 30%;
+        .footer-logo {
+          width: 7rem;
+          padding-bottom: $space-inbetween-elements;
+        }
+        .footer-description {
+          @include P(left, $white);
+          padding-bottom: $space-inbetween-elements;
+        }
+        .footer-disclaimer {
+          @include P(left, $white);
+        }
+        .follow-heading {
+          @include H4(center, $white);
+          padding-bottom: $space-elements;
+        }
+        .social {
+          display: flex;
+          justify-content: space-evenly;
+          .social-circle {
+            width: 2rem;
+            height: 2rem;
+            background-color: $white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0.5rem;
+            border-radius: 10rem;
+            box-shadow: 5px 5px 100px $primary-color;
+            .social-link {
+              .fab {
+                color: $secondary-color;
+                &:hover {
+                  color: $primary-color;
+                }
+              }
+            }
+          }
+        }
+        .footer-heading {
+          @include H4(center, $white);
+          padding-bottom: $space-elements;
+        }
+        .footer-address {
+          white-space: pre-line;
+          @include P(center, $white);
+          padding-bottom: $space-inbetween-elements;
+        }
+        .footer-email {
+          @include P(center, $white);
+        }
+      }
+    }
+  }
+  .scroll-to-top {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 10rem;
+    background-color: $white;
+    left: 69rem;
+    bottom: 2rem;
+    padding: 1rem;
+    color: $primary-color;
+    box-shadow: 5px 5px 100px $primary-color;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Layout responsive for Tablet
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  #footer {
+    .wrapper {
+      .footer-container {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: $space-elements;
+        padding-bottom: $space-elements;
+        .footer-column {
+          flex: 0 1 100%;
+          padding-bottom: $space-elements;
+        }
+      }
+    }
+    .scroll-to-top {
+      left: 57rem;
+    }
+  }
+}
+
+// Layout responsive for Mobile
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #footer {
+    .wrapper {
+      .footer-container {
+        flex-direction: column;
+        justify-content: space-between;
+        padding-top: $space-elements;
+        padding-bottom: $space-elements;
+        .footer-column {
+          flex: 0 1 100%;
+          padding-bottom: $space-elements;
+        }
+      }
+    }
+    .scroll-to-top {
+      left: 25rem;
+    }
+  }
+}

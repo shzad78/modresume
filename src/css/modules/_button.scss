@@ -1,0 +1,6 @@
+#button {
+  display: inline-block;
+  .button-text {
+    @include button($white, $white, $white, $primary-color);
+  }
+}

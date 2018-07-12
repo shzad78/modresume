@@ -1,0 +1,42 @@
+#contact {
+  .wrapper {
+    @include wrapper($wrapper-width);
+    .contact-heading {
+      @include H3(center, $primary-color);
+      padding-top: $space-for-first-element;
+      padding-bottom: $space-inbetween-elements;
+    }
+    .contact-subtitle {
+      @include P(center, $secondary-color);
+      padding-bottom: $space-inbetween-elements;
+      width: 60%;
+      margin: auto;
+    }
+    .contact-form-container {
+      display: flex;
+      justify-content: center;
+      .contact-form {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        margin-bottom: $space-for-last-element;
+        .contact-field {
+          @include P(left, $secondary-color);
+          border: 0.1rem solid $secondary-color;
+          border-radius: 0.5rem;
+          line-height: 2.5rem;
+          padding-left: 1rem;
+          margin-bottom: $space-inbetween-elements;
+        }
+        .contact-button {
+          @include button(
+            $secondary-color,
+            $primary-color,
+            $primary-color,
+            $white
+          );
+        }
+      }
+    }
+  }
+}
