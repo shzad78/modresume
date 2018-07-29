@@ -13,7 +13,6 @@
     "type": "git",
     "url": "https://github.com/shzad78/modresume.git"
   },
-  
   "dependencies": {
     "@material-ui/core": "^1.2.1",
     "axios": "^0.18.0",
